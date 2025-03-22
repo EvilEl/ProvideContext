@@ -4,7 +4,7 @@ import { injectAvatarRootContext } from "./AvatarRoot.vue";
 
 const avatarRootContext = injectAvatarRootContext();
 
-const size = computed(() => avatarRootContext.size);
+const size = computed(() => avatarRootContext?.size ?? "md");
 </script>
 
 <template>

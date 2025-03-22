@@ -1,8 +1,12 @@
 <script lang="ts">
 import { createContext } from "@/shared/createContext";
 
+interface AvatarRootContext {
+  size?: string;
+}
+
 export const [injectAvatarRootContext, provideAvatarRootContext] =
-  createContext("AvatarRoot");
+  createContext<AvatarRootContext>("AvatarRoot");
 </script>
 
 <script setup lang="ts">
